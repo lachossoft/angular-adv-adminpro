@@ -4,10 +4,13 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from "@angular/forms";
 
 
+//IMPORTACIONES DE MODULOS
 
-import { AppRoutingModule } from '../app-routing.module';
 import { SharedModule } from '../shared/shared.module';
+import { ComponentsModule } from '../components/components.module';
 
+
+//IMPORTACIONES DE COMPONENTES
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
@@ -30,11 +33,14 @@ import { PagesComponent } from './pages.component';
     PagesComponent,
   ],
   imports: [
+    /*Modulos de Angular*/
     CommonModule,
     FormsModule,
 
+    /*Modulos Propios*/
     SharedModule,
     RouterModule,
+    ComponentsModule,
   ],
 })
 export class PagesModule { }
