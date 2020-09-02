@@ -6,10 +6,12 @@
                    Mi progreso
                 </h4>
                 <div class="progress m-t-20">
-                    <div class="progress-bar bg-primary progress-bar-striped active" style="width: 50%; height:10px;" role="progressbar"> 
-                        <span class="sr-only">
-                            85% Complete (success)
-                        </span> 
+                    <div 
+                        class="progress-bar bg-primary progress-bar-striped active" 
+                        style="height:5px;"
+                        [style.width]="getPorcentaje" 
+                        role="progressbar"
+                    >  
                     </div>
                 </div>
             </div>
@@ -24,15 +26,30 @@
                 
             <div class="input-group">
                 <span class="input-group-btn">
-                    <button class="btn btn-primary" type="button">
+                    <button 
+                        (click)="cambiarValor(-5)"
+                        class="btn btn-primary" 
+                        type="button"
+                    >
                         <i class="fa fa-minus"></i>
                     </button>
                 </span>
 
-                <input type="text" class="form-control" placeholder="Progreso">
+                <input 
+                    type="number" 
+                    min=0
+                    max=100
+                    class="form-control"
+                    placeholder="Progreso"
+                    [(ngModel)]="progreso"
+                >
 
                 <span class="input-group-btn">
-                   <button class="btn btn-success" type="button">
+                   <button
+                        (click)="cambiarValor(5)" 
+                        class="btn btn-success" 
+                        type="button"
+                    >
                         <i class="fa fa-plus"></i>
                    </button>
                 </span>
