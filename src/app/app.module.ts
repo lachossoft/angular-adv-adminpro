@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 //IMPORTACION DE MODULOS
 
 import { AppRoutingModule } from './app-routing.module';
@@ -26,6 +27,7 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+
     PagesModule,
     AuthModule,
   ],
