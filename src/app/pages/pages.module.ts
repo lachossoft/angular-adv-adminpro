@@ -3,10 +3,6 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from "@angular/forms";
 
-//IMPORTACION DE MODULOS DE TERCEROS
-
-import { ChartsModule } from 'ng2-charts';
-
 
 //IMPORTACIONES DE MODULOS
 
@@ -42,7 +38,7 @@ import { PagesComponent } from './pages.component';
     FormsModule,
 
     /*Modulos de Terceros*/
-    ChartsModule,
+  
 
     /*Modulos Propios*/
     SharedModule,
